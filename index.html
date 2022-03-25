@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+     <h1>THE CODE REVIEW</h1>
+     <h2>Signup for our newsletter</h2>
+     <p>Get the latest news on how your code is doingright in your inbox.</p>
+    <form class="Contact_form">
+      <fieldset>
+        <legend>Contact Information </legend>
+    
+        <label for="name">Full name:</label>
+        <input type="text" id="name" name="user_Name" placeholder="Required"><br>
+        <label for="email">Email Address :</label>
+        <input type="email" id="email" name="user_Email" placeholder="Required"><br>
+        <label for="phone">Phone number :</label>
+        <input type="tel" id="phone" name="user_phone_Number"><br>
+        <label for="address">Street address:</label>
+        <input type="text" id="address" name="user_Address"><br>
+        <label for="City">City:</label>
+        <input type="text" id="City" name="user_City"><br>
+        <label for="State">State:</label>
+        <select id="State" name="user_State">
+  
+          <option value="Alabama">Alabama</option>
+          <option value="Florida">Florida</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Indiana">Indiana</option>
+        </select><br>
+        <label>Zip Code </label>
+        <input type="text" id="Zip_Code" name="Zip_Code"><br>
+      </fieldset>
+    
+      <fieldset>
+       <!-- Newsletter topic  -->
+        <label>Newsletter</label>
+        <legend>Select the newsletters you would like to receive</legend><br>
+        <input type="checkbox" id="HTML_news" name="user_newsletter">
+        <label for="HTML_news">HTML News</label><br>
+        <input type="checkbox" id="CSS_news" name="user_newsletter">
+        <label for="CSS_news">CSS News</label><br>
+        <input type="checkbox" id="Javascript_news" name="user_newsletter">
+        <label for="Javascript_news">Javascript News</label>
+      <!-- Newsletter type  -->
+        <label>Newsletter Format</label><br>
+          <input type="radio" id="type_HTML" name="user_newsletter_format">
+          <label for="type_HTML">HTML</label><br>
+          <input type="radio" id="type_Text" name="user_newsletter_format">
+          <label for="type_Text">Plain text</label>
+      <!-- textarea input  -->
+          <label>Other topics you'd like to hear about </label><br>
+          <textarea id="comment" name="user_Comment"></textarea>
+      </fieldset>
+      <button type="submit">Sign Up</button>
+    </form>
+    
+    <script src="" async defer></script>
+  </body>
+
+  <footer>Copyright the Code Review</footer>
+</html>
