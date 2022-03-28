@@ -8,62 +8,98 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
+    <header>
      <h1>THE CODE REVIEW</h1>
      <h2>Signup for our newsletter</h2>
-     <p>Get the latest news on how your code is doingright in your inbox.</p>
-    <form class="Contact_form">
-      <fieldset>
+     <p>Get the latest news on how your code is doing right in your inbox.</p>
+    </header>
+    <main>
+    <form >
+      <fieldset class="Contact_info">
         <legend>Contact Information </legend>
-    
-        <label for="name">Full name:</label>
-        <input type="text" id="name" name="user_Name" placeholder="Required"><br>
-        <label for="email">Email Address :</label>
-        <input type="email" id="email" name="user_Email" placeholder="Required"><br>
-        <label for="phone">Phone number :</label>
+        <div class="Item">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="user_Name" placeholder="Required" required><br>
+      </div>
+
+      <div class="Item">
+        <label for="email">Email Address </label>
+        <input type="email" id="email" name="user_Email" placeholder="Required" required><br>
+      </div>
+
+      <div class="Item">
+        <label for="phone">Phone number </label>
         <input type="tel" id="phone" name="user_phone_Number"><br>
-        <label for="address">Street address:</label>
+      </div>
+
+        <div class="Item">
+        <label for="address">Street address</label>
         <input type="text" id="address" name="user_Address"><br>
-        <label for="City">City:</label>
+      </div>
+
+      <div class="Item">
+        <label for="City">City</label>
         <input type="text" id="City" name="user_City"><br>
-        <label for="State">State:</label>
+      </div>
+
+      <div class="Item">
+        <label for="State">State</label>
         <select id="State" name="user_State">
-  
+          <option value="" disabled selected hidden>Choose a state</option>
           <option value="Alabama">Alabama</option>
           <option value="Florida">Florida</option>
           <option value="Georgia">Georgia</option>
           <option value="Indiana">Indiana</option>
         </select><br>
-        <label>Zip Code </label>
+      </div>
+
+      <div class="Item">
+        <label>Zip Code</label>
         <input type="text" id="Zip_Code" name="Zip_Code"><br>
+      </div>
+
       </fieldset>
     
-      <fieldset>
+      <fieldset class="Newsletter">
        <!-- Newsletter topic  -->
-        <label>Newsletter</label>
-        <legend>Select the newsletters you would like to receive</legend><br>
+       <div class="wrapper">
+        <legend>Newsletter</legend>
+        <label>Select the news letters you would like to receive</label><br>
         <input type="checkbox" id="HTML_news" name="user_newsletter">
         <label for="HTML_news">HTML News</label><br>
         <input type="checkbox" id="CSS_news" name="user_newsletter">
         <label for="CSS_news">CSS News</label><br>
         <input type="checkbox" id="Javascript_news" name="user_newsletter">
-        <label for="Javascript_news">Javascript News</label>
+        <label for="Javascript_news">Javascript News</label><br>
+      </div>
       <!-- Newsletter type  -->
+
+      <div class="wrapper">
         <label>Newsletter Format</label><br>
           <input type="radio" id="type_HTML" name="user_newsletter_format">
           <label for="type_HTML">HTML</label><br>
           <input type="radio" id="type_Text" name="user_newsletter_format">
-          <label for="type_Text">Plain text</label>
+          <label for="type_Text">Plain text</label><br>
+          </div>
       <!-- textarea input  -->
+      <div class="wrapper">
           <label>Other topics you'd like to hear about </label><br>
           <textarea id="comment" name="user_Comment"></textarea>
       </fieldset>
+    </div>
       <button type="submit">Sign Up</button>
+    
     </form>
     
     <script src="" async defer></script>
-  </body>
 
-  <footer>Copyright the Code Review</footer>
+  </main>
+<footer> <h5>Copyright the Code Review</h5> </footer>
+  </body>
 </html>
