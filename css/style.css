@@ -41,7 +41,7 @@ fieldset label {
     font-size:1.25rem;
     font-weight: 700;
 }
-/*DRY:do not repeat yourself class */
+/*DRY:do not repeat yourself classes */
 
 .border_rad{
     border-radius: 10px;
