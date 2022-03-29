@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Newsletter</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
@@ -35,17 +35,17 @@
 
       <div class="Item">
         <label for="phone">Phone number </label>
-        <input type="tel" id="phone" name="user_phone_Number"><br>
+        <input type="tel" id="phone" name="user_phone_Number" placeholder="Phone number" ><br>
       </div>
 
         <div class="Item">
         <label for="address">Street address</label>
-        <input type="text" id="address" name="user_Address"><br>
+        <input type="text" id="address" name="user_Address" placeholder="Street address"><br>
       </div>
 
       <div class="Item">
         <label for="City">City</label>
-        <input type="text" id="City" name="user_City"><br>
+        <input type="text" id="City" name="user_City" placeholder="City"><br>
       </div>
 
       <div class="Item">
@@ -61,15 +61,16 @@
 
       <div class="Item">
         <label for="Zip_Code">Zip Code</label>
-        <input type="text" id="Zip_Code" name="Zip_Code"><br>
+        <input type="text" id="Zip_Code" name="Zip_Code" placeholder="Zip Code"><br>
       </div>
 
       </fieldset>
     
       <fieldset class="Newsletter">
        <!-- Newsletter topic  -->
-       <div class="wrapper">
+      
         <legend>Newsletter</legend>
+        <div class="wrapper">
         <label>Select the news letters you would like to receive</label><br>
         <input type="checkbox" id="HTML_news" name="user_newsletter">
         <label for="HTML_news">HTML News</label><br>
@@ -80,7 +81,7 @@
       </div>
       <!-- Newsletter type  -->
 
-      <div class="wrapper">
+         <div class="wrapper">
         <label>Newsletter Format</label><br>
           <input type="radio" id="type_HTML" name="user_newsletter_format">
           <label for="type_HTML">HTML</label><br>
@@ -91,13 +92,13 @@
       <div class="wrapper">
           <label for="comment">Other topics you'd like to hear about </label><br>
           <textarea id="comment" name="user_Comment"></textarea>
+        </div>
       </fieldset>
-    </div>
+ 
       <button type="submit">Sign Up</button>
     
     </form>
     
-    <script src="" async defer></script>
 
   </main>
 <footer> <h5>Copyright the Code Review</h5> </footer>
