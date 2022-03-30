@@ -94,18 +94,17 @@ fieldset{
  
  }
 
-.Contact_info input, select{
+ fieldset:first-child input, select{
     width:100%;
     height: 50px;
 
 }
-
-.Contact_info {
-    display: flex;
+fieldset:first-child { display: flex;
     flex-direction: column;
     border-bottom:1px solid #00539CFF; 
+}
 
-    }
+
 
 input,select,textarea {
        
@@ -142,7 +141,7 @@ select {
 
 /*styling the newsletter form part*/
 
-.Newsletter input {
+fieldset:last-child input {
     margin-right: 15px;
     
 }
