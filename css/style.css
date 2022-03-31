@@ -68,6 +68,11 @@ h1{
    
 
 }
+/*all input text that are not submit button will have the box-shadow*/
+input:not([type="submit"]){
+
+    box-shadow: inset 0 2px 0 rgba(0, 0, 0, .15);
+}
 
 /*styling the form*/
 form{
@@ -99,9 +104,12 @@ fieldset{
     height: 50px;
 
 }
-fieldset:first-child { display: flex;
+fieldset:first-child {
+    
+    display: flex;
     flex-direction: column;
     border-bottom:1px solid #00539CFF; 
+
 }
 
 
