@@ -33,7 +33,9 @@ legend {
         color:rgb(236, 79, 0);
         font-size:1.5rem;/*always refers to the root font-size :1.5*18px is the final result */
         text-transform: uppercase;
+       
     }
+
 
 fieldset label {
         
