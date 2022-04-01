@@ -97,7 +97,7 @@ fieldset{
 .item {
   display:flex;
   flex-direction: column;
-  padding:20px 0;
+  padding:10px 0;
   
  }
 
