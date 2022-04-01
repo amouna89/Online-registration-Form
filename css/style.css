@@ -94,14 +94,25 @@ fieldset{
     border: none;
 }
 
-.Item {
-
- padding:20px 0;
+.item {
+  display:flex;
+  flex-direction: column;
+  padding:20px 0;
   
- 
  }
 
- fieldset:first-child input, select{
+ .row{
+   line-height: 1;  
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  
+ }
+ .row p{
+     font-size:18px
+ }
+
+ fieldset:first-child input:not([id="Zip_Code"]), select{
     width:100%;
     height: 50px;
 
@@ -143,6 +154,7 @@ input[placeholder]{
 input[id="Zip_Code"] {
     margin-bottom:50px;
     width:50%;
+    height: 50px;
 }
 select {
     font-size: 18px;
@@ -166,6 +178,12 @@ textarea {
     width: 100%;
     height: 30vh;
     border: 2px solid #00539CFF;
+}
+
+textarea::placeholder{
+    font-size: 20px;
+    text-align: left;
+    padding:10px;
 }
 button {
     width: 100%;
@@ -196,19 +214,21 @@ footer {
 
 @media screen and (min-width:786px){
 
-    .Item {
+    .item {
         display:flex;
+        flex-direction:row;
    
     }
 
-    .Item label {
+   .item label {
         flex-basis:300px;
-        flex-grow: 0;/*flex-grow:0 is the defqukt value*/
-        flex-shrink: 0;/*flex-shrink:1 is the default value */
+        flex-grow: 0; /*flex-grow:0 is the default value */
+        flex-shrink: 0; /*flex-shrink:1 is the default value */
 
     }
     input[id="Zip_Code"]{
         width:25%;
+        height: 50px;
     }
 
 }

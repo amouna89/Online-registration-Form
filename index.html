@@ -27,34 +27,41 @@
     <form >
       <fieldset>
         <legend>Contact Information </legend>
-        <div class="Item" >
+        <div class="item" >
         <label for="name">Full name *<i class="fas fa-exclamation-triangle"></i></label>
+        <div class="row">
         <input type="text" id="name" name="user_Name"  class="border_rad background_form_header" placeholder="Required" required><br>
-      
+        <p>please enter your full name.</p>
+       </div>
       </div>
 
-      <div class="Item">
+      <div class="item">
         <label for="email">Email Address * <i class="fas fa-exclamation-triangle"></i></label>
+        <div class="row">
         <input type="email" id="email" name="user_Email" class="border_rad background_form_header" placeholder="Required" required><br>
-    
+        <p>email adress must contain a single @.</p>
+      </div>
       </div>
 
-      <div class="Item">
+      <div class="item">
         <label for="phone">Phone number </label>
+        <div class="row">
         <input type="tel" id="phone" name="user_phone_Number" class="border_rad background_form_header" placeholder="Phone number" ><br>
+        <p>please enter a valid phone number.</p>
+        </div>
       </div>
 
-        <div class="Item">
+        <div class="item">
         <label for="address">Street address</label>
         <input type="text" id="address" name="user_Address"  class="border_rad background_form_header" placeholder="Street address"><br>
       </div>
 
-      <div class="Item">
+      <div class="item">
         <label for="City">City</label>
         <input type="text" id="City" name="user_City"  class="border_rad background_form_header" placeholder="City"><br>
       </div>
 
-      <div class="Item">
+      <div class="item">
         <label for="State">State</label>
         <select id="State" name="user_State" class="border_rad background_form_header">
           <option value="" disabled selected hidden>Choose a state</option>
@@ -65,7 +72,7 @@
         </select><br>
       </div>
 
-      <div class="Item">
+      <div class="item">
         <label for="Zip_Code">Zip Code</label>
         <input type="text" id="Zip_Code" name="Zip_Code" placeholder="Zip Code" class="border_rad background_form_header"><br>
       </div>
@@ -97,7 +104,7 @@
       <!-- textarea input  -->
       <div class="wrapper">
           <label for="comment">Other topics you'd like to hear about </label><br>
-          <textarea id="comment" name="user_Comment" class="border_rad background_form_header"></textarea>
+          <textarea id="comment" name="user_Comment" class="border_rad background_form_header" placeholder="please enter a message"></textarea>
         </div>
       </fieldset>
  
